@@ -5,14 +5,20 @@ import {NgModule}      from '@angular/core';
 import {CommonModule}  from '@angular/common';
 import {ComComponent} from './com.component';
 import {routing} from './com.routing';
+import {KComComponent} from "./kcom/kcom.component";
+import {ComService} from "../../theme/services/com/com.service";
 
 @NgModule({
   imports: [
     CommonModule,
     routing
   ],
+  providers: [
+    ComService
+  ],
   declarations: [
-    ComComponent
+    ComComponent,
+    KComComponent
   ]
 })
 export class ComModule {
