@@ -2,15 +2,7 @@
 
 <!--<p>{{state.state | json}}</p>-->
 
-  <!--<table class="table table-bordered">-->
-    <!--<tr>-->
-      <!--<th>Active</th>-->
-    <!--</tr>-->
-    <!--<tr>-->
-      <!--<td>{{ kcom.active }}</td>-->
-    <!--</tr>-->
-  <!--</table>-->
-<div class="vertical-scroll">
+<div>
   <table class="table table-condensed">
 
     <tr>
@@ -21,7 +13,34 @@
       <th>RSSI</th>
       <td>{{ kcom.rssi }}</td>
     </tr>
-
+    <tr>
+      <th></th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>MCU reset</th>
+      <td>{{kcom.mcuReset}}</td>
+    </tr>
+    <tr>
+      <th>TRX reset</th>
+      <td>{{kcom.trxReset}}</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>BAT status</th>
+      <td>{{kcom.batStatus}}</td>
+    </tr>
+    <tr>
+      <th>DCDC status</th>
+      <td>{{kcom.dcdcStatus}}</td>
+    </tr>
+    <tr>
+      <th>EPS status</th>
+      <td>{{kcom.epsStatus}}</td>
+    </tr>
   </table>
 </div>
 <!--<p> Active {{ kcom.active}}</p>-->
