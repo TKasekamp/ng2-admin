@@ -25,7 +25,7 @@ export class ComService {
 
   getKCom(): Observable<KCom> {
     return this.http.get('/assets/data/raw-kcom.json')
-                    .map((res: Response) => {console.log(res.json()); res.json()})
+                    .map((res: Response) => res.json())
                  // .do(data => console.log('server data:', data))  // debug
                     .catch(this.handleError);
   }
