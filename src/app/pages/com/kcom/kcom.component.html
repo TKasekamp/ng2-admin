@@ -1,14 +1,27 @@
 <!--<p>{{kcom | async }}</p>-->
 
-<p>{{state.state | json}}</p>
+<!--<p>{{state.state | json}}</p>-->
 
-  <table class="table table-bordered">
+  <!--<table class="table table-bordered">-->
+    <!--<tr>-->
+      <!--<th>Active</th>-->
+    <!--</tr>-->
+    <!--<tr>-->
+      <!--<td>{{ kcom.active }}</td>-->
+    <!--</tr>-->
+  <!--</table>-->
+<div class="vertical-scroll">
+  <table class="table table-condensed">
+
     <tr>
       <th>Active</th>
-    </tr>
-    <tr>
       <td>{{ kcom.active }}</td>
     </tr>
-  </table>
+    <tr>
+      <th>RSSI</th>
+      <td>{{ kcom.rssi }}</td>
+    </tr>
 
+  </table>
+</div>
 <!--<p> Active {{ kcom.active}}</p>-->
